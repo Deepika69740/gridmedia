@@ -1,0 +1,33 @@
+.A{
+    display: grid;
+    grid-template-columns: repeat(4 ,2fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.dv{
+    background-color: chartreuse;
+    margin-bottom: 10px;
+}
+@media  (min-width:0px) and (max-width:500vw) {
+    .A{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:501px) and (max-width:900vw){
+    .A{
+        grid-template-columns: repeat(3,2fr);
+    }
+}
+@media (min-width:901px) and (max-width:1200vw){
+    .A{
+        grid-template-columns: repeat(5,4fr);
+    }
+}
+@media (min-width:1201px) and (max-width:1500vw){
+    .A{
+        grid-template-columns: 200px 300px 600px 6fr;
+    }
+    .dv{
+        font-size: 30px;
+    }
+}
